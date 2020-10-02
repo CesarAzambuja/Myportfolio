@@ -2,6 +2,7 @@
 
 :root{
     --color-green: #50fa7b;
+    --color-purple: #7159c1;
 }
 
 *{
@@ -125,3 +126,93 @@ header{
     margin-right: 10px;
     zoom: 1.2;
 }
+
+/*PROJETOS*/
+
+.cards{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card{
+    background-color: var(--color-purple);
+    border-radius: 15px;
+
+}
+.card_img_container img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.card_content, .card_inf{
+    padding: 24px;
+}
+
+.card_inf{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_price{
+    background-color: var(--color-purple);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.card_price:hover{
+    background-color: white;
+}
+
+/*MODAL*/
+
+.modal_overlay{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color:rgba(250,250,250,0.3);
+    border-radius: 15px;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+.modal .close_modal {
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+ }
+
+ .fa-times-circle{
+     zoom: 1.5;
+ }
+
+ /*MODAL AVTIVE*/
+
+ .modal_overlay.active{
+     opacity: 1;
+     visibility: visible;
+ }
+
+ iframe{
+     width: 100%;
+     height: 90%;
+     position: absolute;
+     bottom: 5%;
+     
+ }
