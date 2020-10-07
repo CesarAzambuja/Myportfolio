@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+        <title>Dev Azambuja</title>
+{% endblock%}
+
+{% block content %}
+<div id="wrapper">
+    <img src="{{about.avatar_url}}" alt="Imagem de {{about.name}}">
+    <h1>{{about.name}}</h1>
+    <h2>{{about.role}}</h2>
+    <p>{{about.description}}</p>
+    <a href="{{about.link_git}}" target="_blank"><i class="fab fa-github-square"></i>{{about.name_git}}</a>
+</div><!--wrapper-->
+
+<div id="redes_sociais" class="links" >
+    {% for link in about.links %}
+        <a href="{{link.link}}" target="blank"><i class="{{link.image}}"></i>{{link.name}}</a>
+    {% endfor %}
+</div><!--redes_sociais-->
+
+{% endblock %}
+
+{% block script%}
+     <script src="https://kit.fontawesome.com/f4dd9ff78b.js" 
+    crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
+{% endblock %}
+

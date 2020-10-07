@@ -1,0 +1,286 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap";
+
+:root{
+    --color-green: #50fa7b;
+    --color-purple: #7159c1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #282a36;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(0,0,0,0.1);
+    border-bottom: 1px solid #333;
+}
+
+ .links{
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    text-align: center;
+    
+}
+
+ .links a{
+    color: white;
+    font-size: 35px;
+    line-height: 45px;
+    text-decoration: none;
+    margin: 0 16px;
+    transition: color 0.7s;
+}
+
+.links a:hover{
+    color:var(--color-green);
+}
+
+/*FIM DO CSS DO HEADER*/
+
+#wrapper{
+    text-align: center;
+    padding-top: 32px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#wrapper img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid var(--color-green);
+    transition: 1.5s;
+    transition-duration: 1.5s;
+    
+}
+
+#wrapper img:hover{
+    border: 4px solid white;
+    
+}
+
+#wrapper h1{
+    font-size: 38px;
+    line-height: 52px;
+    padding-top: 32px;
+    color:var(--color-green);
+}
+
+#wrapper h2{
+    padding: 20px 0;
+    font-weight: 400;
+    color: azure;
+    opacity: 0.6;
+}
+
+#wrapper p{
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto;
+    color: azure;
+    opacity: 0.4;
+}
+
+#wrapper  a{
+    line-height: 28px;
+    color: var(--color-green);
+    transition: 0.7s;
+    text-decoration: none;
+    
+}
+
+#wrapper a i{
+    margin-right: 7px;
+    zoom: 1.2;
+}
+
+#wrapper a:hover{
+    color: white;
+}
+
+
+
+#redes_sociais{
+    width: 100%;
+    text-align: center;
+    padding:  40px 1px;
+}
+
+#redes_sociais a{
+    font-size: 16px;
+    
+}
+
+
+#redes_sociais a i{
+    margin-right: 10px;
+    zoom: 1.2;
+}
+
+/*PROJETOS*/
+
+.cards{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card{
+    background-color: var(--color-purple);
+    border-radius: 15px;
+    cursor: pointer;
+    display: grid;
+    color: white;
+
+}
+.card_img_container img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.card_content, .card_inf{
+    padding: 24px;
+}
+
+.card_inf{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.card_price{
+    background-color: var(--color-purple);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.card_price:hover{
+    background-color: white;
+}
+
+/*MODAL*/
+
+.modal_overlay{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color:rgba(250,250,250,0.3);
+    border-radius: 15px;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+.modal .close_modal {
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+ }
+
+ .fa-times-circle{
+     zoom: 1.5;
+ }
+
+ /*MODAL AVTIVE*/
+
+ .modal_overlay.active{
+     opacity: 1;
+     visibility: visible;
+ }
+
+ iframe{
+     width: 100%;
+     height: 90%;
+     position: absolute;
+     bottom: 5%;
+     
+ }
+
+ /*FEATURED*/
+.featured-wrapper.card_img_container{
+    position: relative;
+}
+
+.featured{
+    background: rgba(243, 171, 56, 0.89);
+    color: black;
+    padding: 2px 8px;
+    position: absolute;
+    right: 5px;
+    top: 130px;
+    border-radius: 8px;
+}
+
+/*VIDEO_PAGE*/
+
+.video{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.card_video_container{
+    position: relative;
+    padding-top: 60%;
+}
+
+.card_video_container iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    
+}
+
+@media screen and (max-width: 820px){
+    .cards{
+        max-width: 500px;
+        margin: 0 auto;
+        display: grid ;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #redes_sociais{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards{
+        max-width: 300px;
+        margin: 0 auto;
+        display: grid ;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    {% block head %}
+        <title>Dev Azambuja</title>
+    {% endblock%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div id="menu_desktop" class="links">
+            <a href="/">Sobre</a>
+            <a href="/projects">Projetos</a>
+        </div><!--menu_desktop-->  
+    </header>    
+
+    {% block content %} {% endblock %}
+
+    {% block script%} {% endblock%}
+</body>
+
+</html>

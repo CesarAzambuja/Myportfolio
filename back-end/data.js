@@ -1,0 +1,47 @@
+module.exports = [
+    {
+        id: "zmxw7NgsBH",
+        image: "https://usefors.com.br/wp-content/uploads/2020/07/dark.jpg",
+        title: "Projeto bla bla bla bla",
+        duration: "10:54",
+        price: "Free",
+        featured: true,
+    },
+    {
+        id: "LOrALdmPWVU",
+        image: "https://usefors.com.br/wp-content/uploads/2020/07/dark.jpg",
+        title: "Projeto bla bla bla bla",
+        duration: "10:54",
+        price: "Free",
+        featured: true,
+    },
+    {
+        id: "I-t6UUbLRiY",
+        image: "https://usefors.com.br/wp-content/uploads/2020/07/dark.jpg",
+        title: "Projeto bla bla bla bla",
+        duration: "10:54",
+        price: "Free",
+    },
+    {
+        id: "I43Ts_F00Ro",
+        image: "https://usefors.com.br/wp-content/uploads/2020/07/dark.jpg",
+        title: "Projeto bla bla bla bla",
+        duration: "10:54",
+        price: "Free",
+    },
+    {
+        id: "9RNHKKYJvg8",
+        image: "https://usefors.com.br/wp-content/uploads/2020/07/dark.jpg",
+        title: "Projeto bla bla bla bla",
+        duration: "10:54",
+        price: "Free",
+        featured: true,
+    },
+    {
+        id: "vF2vxj8HZIk",
+        image: "https://usefors.com.br/wp-content/uploads/2020/07/dark.jpg",
+        title: "Projeto bla bla bla bla",
+        duration: "10:54",
+        price: "Free",
+    },   
+]
