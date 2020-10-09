@@ -1,8 +1,8 @@
 @import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap";
 
 :root{
-    --color-green: #50fa7b;
-    --color-purple: #7159c1;
+    --color-green: #FF8000;
+    --color-purple: #0B0B61;
 }
 
 *{
@@ -139,11 +139,11 @@ header{
 }
 
 .card{
-    background-color: var(--color-purple);
+    background-color: rgba(80, 99, 119, 0.79);
     border-radius: 15px;
     cursor: pointer;
     display: grid;
-    color: white;
+    color: silver;
 
 }
 .card_img_container img{
@@ -162,7 +162,8 @@ header{
 }
 
 .card_price{
-    background-color: var(--color-purple);
+    color: white;
+    background-color: var(--color-green);
     filter: brightness(90%);
     padding: 5px 20px;
     border-radius: 20px;
@@ -172,6 +173,7 @@ header{
 
 .card_price:hover{
     background-color: white;
+    color: black;
 }
 
 /*MODAL*/
